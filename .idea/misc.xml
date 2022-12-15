@@ -3,8 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Programas/projetosAndroid/Metronomo/app/src/main/res/drawable/background_style.xml" value="0.1085" />
+        <entry key="..\:/Programas/projetosAndroid/Metronomo/app/src/main/res/drawable/botao_aumentar_reduzir.xml" value="0.1085" />
         <entry key="..\:/Programas/projetosAndroid/Metronomo/app/src/main/res/drawable/ic_baseline_minimize_24.xml" value="0.1085" />
-        <entry key="..\:/Programas/projetosAndroid/Metronomo/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Programas/projetosAndroid/Metronomo/app/src/main/res/drawable/ic_baseline_music_note_24.xml" value="0.1085" />
+        <entry key="..\:/Programas/projetosAndroid/Metronomo/app/src/main/res/drawable/ic_music_note.xml" value="0.1085" />
+        <entry key="..\:/Programas/projetosAndroid/Metronomo/app/src/main/res/drawable/seekbar_background.xml" value="0.1085" />
+        <entry key="..\:/Programas/projetosAndroid/Metronomo/app/src/main/res/drawable/seekbar_thumb.xml" value="0.1085" />
+        <entry key="..\:/Programas/projetosAndroid/Metronomo/app/src/main/res/drawable/seekbar_track.xml" value="0.1085" />
+        <entry key="..\:/Programas/projetosAndroid/Metronomo/app/src/main/res/layout/activity_main.xml" value="0.5" />
         <entry key="..\:/Programas/projetosAndroid/Metronomo/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1085" />
       </map>
     </option>

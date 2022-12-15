@@ -4,38 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@drawable/background_style"
     tools:context=".MainActivity">
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/botao_reduzir"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="100dp"
-        android:backgroundTint="#fff000"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/button_inc_dec"
         android:gravity="center"
         android:onClick="decreaseBPM"
         android:text="-"
+        android:textColor="#3f448c"
         android:textSize="20sp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
 
-        />
+        app:layout_constraintTop_toTopOf="parent" />
+
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/botao_aumentar"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginRight="60dp"
-        android:backgroundTint="#fff000"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/button_inc_dec"
         android:gravity="center"
         android:onClick="increaseBPM"
         android:text="+"
+        android:textColor="#3f448c"
         android:textSize="20sp"
-        app:layout_constraintLeft_toRightOf="@id/textView"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
 
@@ -46,47 +46,56 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="52dp"
-        android:layout_marginTop="92dp"
+        android:layout_marginLeft="167dp"
+        android:layout_marginTop="124dp"
+        android:fontFamily="@font/fontebpm"
         android:text="120"
-        android:textColor="@color/black"
-        android:textSize="50sp"
-        app:layout_constraintLeft_toRightOf="@id/botao_reduzir"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="152dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="64dp"
+        android:fontFamily="@font/fontebpm"
         android:text="BPM"
-        android:textColor="@color/black"
-        android:textSize="50sp"
-        app:layout_constraintBottom_toTopOf="@id/textView"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        android:textColor="#FFF000"
+        android:textSize="40sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/botao_play"
-        android:layout_width="50dp"
+        android:layout_width="100dp"
         android:layout_height="50dp"
-        android:layout_marginLeft="180dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginLeft="152dp"
+        android:layout_marginTop="260dp"
+        android:background="@drawable/button_start"
+        android:gravity="center"
         android:onClick="play"
-        android:src="@drawable/ic_play"
+        android:text="Start"
+        android:textColor="@color/white"
+        android:textSize="23sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textView" />
 
-    <SeekBar
+    <androidx.appcompat.widget.AppCompatSeekBar
         android:id="@+id/seekBar"
-        android:layout_width="98dp"
-        android:layout_height="119dp"
-        android:layout_marginStart="160dp"
-        android:layout_marginBottom="184dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/botao_play"
-        app:layout_constraintVertical_bias="0.411" />
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="20dp"
+        android:max="300"
+        android:min="40"
+        android:progressDrawable="@drawable/seekbar_background"
+        android:thumb="@drawable/ic_music_note"
+        app:layout_constraintEnd_toStartOf="@id/botao_aumentar"
+        app:layout_constraintStart_toEndOf="@id/botao_reduzir"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
